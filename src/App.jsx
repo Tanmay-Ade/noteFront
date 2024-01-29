@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "/app.css";
+import "./App.css";
 
 const App = () => {
   const [notes, setNotes] = useState([]);
