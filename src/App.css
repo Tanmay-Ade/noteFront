@@ -1,6 +1,6 @@
 body {
   margin: 20px;
-  background-color: #dadada;
+  background: url('../public/images/background.avif');
 }
 
 .app-container {
@@ -28,7 +28,7 @@ body {
 .note-item {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ccc;
+  border: 1px solid #666;
   padding: 10px;
   border-radius: 5px;
   background-color: #f9f9f9;
@@ -61,19 +61,30 @@ h2 {
 
 textarea, input {
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid #fff;
   padding: 10px;
   font-size: 16px;
+  color: #fff;
+  background: transparent;
+  backdrop-filter: blur(5px);
 }
 
 .note-form button {
   border-radius: 5px;
-  background-color: teal;
+  background: rgba(0, 100, 100, 0.5);
   border: none;
   padding: 10px;
   font-size: 16px;
   color: #fff;
   cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.note-item {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .note-form button:hover {
@@ -86,10 +97,18 @@ textarea, input {
   gap: 5px;
 }
 
+.notes-header button {
+  color: #ccc;
+}
+
+.notes-header button:hover {
+  color: #fff;
+}
+
 .edit-buttons button {
   flex: 1;
 }
 
 .edit-buttons button:last-of-type {
-  background-color: #c11;
+  background: rgba(255, 0, 0, 0.5);
 }
